@@ -1,0 +1,194 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 500 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex-grow: 1; /* Occupies entire height of the container div for footer to go down*/
+}
+/* <-------------------------Navbar------------------------> */
+
+/* full navbar div */
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+/* Compass icon on navbar */
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+/* anchor tags inside navbar Ex.Home,All listings */
+.nav-link {
+  color: #222222 !important; /*!important - to override default bootstrap styling by our css*/
+}
+.search-btn {
+  background-color: #fe424d !important;
+  color: #fff !important;
+  border-radius: 1.5rem !important;
+  padding: 0 1rem 0 1rem !important;
+}
+.search-btn i {
+  display: inline;
+  margin-right: 0.5rem;
+}
+.search-bar {
+  border-radius: 1.5rem !important;
+  padding: 0.5rem 2rem 0.5rem 2rem !important;
+}
+
+/* <------------------Footer------------------> */
+
+.f-links a:hover {
+  text-decoration: underline;
+}
+
+/* Privacy,terms anchor tags */
+.f-links a {
+  color: #222222;
+  text-decoration: none;
+}
+
+/* Footer privacy,terms div */
+.f-links,
+.f-socials {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Footer social icons */
+.f-socials i {
+  margin: 0rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Footer Entire Div*/
+.f-info {
+  background-color: #ebebeb;
+  height: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-content: space-evenly;
+}
+
+/* <------------------INDEX CARDS-----------------------> */
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.filter {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  text-align: center;
+  opacity: 0.7;
+}
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.filter p {
+  font-size: 0.8rem;
+}
+.tax-info {
+  display: none;
+}
+.tax-toggle {
+  border: 1px solid black;
+  border-radius: 1rem;
+  height: 3.25rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+@media (max-width: 400px) {
+  .hide-on-xs {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hide-on-sm {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .hide-on-md {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .hide-on-lg {
+    display: none;
+  }
+}
+
+/* Single card div */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+/* card image tag */
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+/* card's title,content */
+.card p {
+  font-weight: 500;
+}
+.card-body {
+  padding: 0 !important;
+}
+
+/* Card Effect */
+
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+.listing-link {
+  text-decoration: none;
+}
+
+/* add-btn new form */
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+/*Show Page*/
+.show-img {
+  height: 40vh;
+}
+.show-btns {
+  display: flex;
+}
+.show-card {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.filters-btn {
+  border: none;
+  background: none;
+}
